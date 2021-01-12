@@ -1,7 +1,10 @@
-package com.sample;
+package com.check;
 
 interface NewInterface {
 
+  interface dd{
+
+  }
   // static method
   static void hello()
   {
