@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -42,6 +43,10 @@ public class First implements InterfaceWithStatic {
       s.add(5);
       s.add(6);
       s.add(4,4);
+
+    List<Integer> l2= Arrays.asList(1,2,3,4,5,6,7);
+    int[] l3 = l2.stream().mapToInt(_i->_i).toArray();
+    System.out.println(Arrays.toString(l3));
   }
 
 
